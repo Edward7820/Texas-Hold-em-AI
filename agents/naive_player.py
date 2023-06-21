@@ -2,6 +2,7 @@ from game.players import BasePokerPlayer
 from game.engine.card import Card
 from game.engine.hand_evaluator import HandEvaluator
 import random
+# Reference: https://github.com/ishikota/PyPokerEngine
 
 class NaivePlayer(
     BasePokerPlayer
@@ -10,7 +11,7 @@ class NaivePlayer(
     #  we define the logic to make an action through this method. (so this method would be the core of your AI)
     def declare_action(self, valid_actions, hole_card, round_state):
         # valid_actions format => [fold_action_info, call_action_info, raise_action_info]
-        print(f"receive round state {round_state}")
+        # print(f"receive round state {round_state}")
         # list unseen cards
         hole_card = [Card.from_str(card_str) for card_str in hole_card]
         hole_card_ids = [card.to_id() for card in hole_card]
