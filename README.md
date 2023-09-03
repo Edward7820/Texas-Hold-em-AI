@@ -9,3 +9,12 @@ pyenv exec pip install -r requirement.txt
 ```shell
 pyenv exec python start_game.py
 ```
+## Test DQN AI
+```shell
+pyenv exec python test_dqn.py
+```
+## Test Heuristic AI
+```shell
+pyenv exec python test_heuristic.py
+```
+
